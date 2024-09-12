@@ -1,5 +1,5 @@
 name: wt_firepod_tree_view
-description: "Flutter interactive Tree View widget backed by Riverpod and Firebase."
+description: Flutter interactive Tree View widget backed by Riverpod and Firebase.
 publish_to: 'none'
 version: 1.0.0+1
 homepage: https://github.com/tmcmaster/wt_firepod_tree_view

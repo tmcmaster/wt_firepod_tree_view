@@ -1,39 +1,72 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# wt_firepod_tree_view
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+Flutter interactive Tree View widget backed by Riverpod and Firebase.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+## Examples
 
 ```dart
-const like = 'sample';
+FirepodTreeView.fromList([
+    'First',
+    {
+        'a': 'AA',
+        'b': 'BB',
+        'c': {
+            'cc': 'CC',
+            'dd': 'DD',
+            'ee': [
+                'AAA',
+                {
+                    'a': 'A',
+                    'b': 'B',
+                    'c': {
+                        'cc': 'C',
+                        'dd': 'D',
+                        'ee': 'E',
+                        'ff': 'F',
+                    },
+                }, 
+                'CCC'
+            ],
+            'ff': 'FF',
+        },
+    }, 
+    'Last',
+    Customer(
+        id: '001',
+        name: 'Customer 1',
+        phone: '040400001',
+        email: 'customer+1@example.com',
+        address: '1 main street, Pakenham',
+        postcode: 3810,
+    ),
+]);
 ```
 
-## Additional information
+```dart
+FirepodTreeView.fromMap(
+    {
+        'a': 'AA',
+        'b': 'BB',
+        'c': {
+            'cc': 'CC',
+            'dd': 'DD',
+            'ee': [
+                'AAA',
+                {
+                    'a': 'A',
+                    'b': 'B',
+                    'c': {
+                        'cc': 'C',
+                        'dd': 'D',
+                        'ee': 'E',
+                        'ff': 'F',
+                    },
+                }, 
+                'CCC'
+            ],
+            'ff': 'FF',
+        },
+    }
+);
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```
