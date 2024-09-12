@@ -1,0 +1,27 @@
+name: wt_firepod_tree_view
+description: "Flutter interactive Tree View widget backed by Riverpod and Firebase."
+publish_to: 'none'
+version: 1.0.0+1
+homepage: https://github.com/tmcmaster/wt_firepod_tree_view
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  animated_tree_view:
+  flutter:
+    sdk: flutter
+  wt_firepod:
+    git: https://github.com/tmcmaster/wt_firepod.git
+  wt_logging:
+    git: https://github.com/tmcmaster/wt_logging.git
+  wt_models:
+    git: https://github.com/tmcmaster/wt_models.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+
+flutter:
+  uses-material-design: true
